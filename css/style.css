@@ -1,0 +1,128 @@
+.notification-box {
+  width: 330px;
+  height: 220px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: none;
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.message-container {
+  width: 254px;
+  height: 124px;
+  margin: 10px 0 0 10px;
+  padding: 8px 5px 0 10px;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 3px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.message-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.message-container p {
+  font-weight: bold;
+  line-height: 0;
+  margin: 10px 0 15px 0;
+  text-transform: uppercase;
+}
+
+.exit {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+  color: rgb(160, 160, 160);
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.exit:hover {
+  color: rgb(0, 0, 0);
+}
+
+.notification-control {
+  width: auto;
+  height: 50px;
+  display: flex;
+  margin-top: 36px;
+  overflow: hidden;
+  background: rgb(245, 245, 245);
+}
+
+.notification-control-content {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.notification-control-content label {
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.notification-control-content label input {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.message-control {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.next-elem,
+.prev-elem {
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.fa-chevron-circle-left,
+.fa-chevron-circle-right {
+  font-size: 1.2rem;
+  color: rgb(200, 200, 200);
+  cursor: pointer;
+}
+
+.fa-chevron-circle-left:hover,
+.fa-chevron-circle-right:hover {
+  color: rgb(0, 0, 0);
+}
+
+.message-control ul {
+  width: 67px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin: auto 0 auto 0;
+  font-size: 0;
+}
+
+.message-control ul li {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  border-radius: 50%;
+  background: rgb(200, 200, 200);;
+}
+
+.block {
+  background: grey;
+  height: 1000px;
+  padding: 20px;
+}
